@@ -1,0 +1,55 @@
+table {
+  border-collapse: separate;
+  border-spacing: 15px;
+}
+
+td {
+  height: 100px;
+  width: 100px;
+  padding: 2px;
+}
+
+tr:nth-of-type(odd) td:nth-of-type(odd) {
+  background: rgb(7, 187, 7);
+  border: 5px solid rgb(253, 71, 25);
+}
+
+tr:nth-of-type(odd) td:nth-of-type(odd) div:nth-child(odd) {
+  height: 40%;
+  width: 40%;
+  background: rgb(253, 71, 25);
+  margin: auto;
+}
+tr:nth-of-type(odd) td:nth-of-type(even) {
+  border: 5px solid rgb(7, 187, 7);
+  background: rgb(253, 71, 25);
+}
+tr:nth-of-type(odd) td:nth-of-type(even) div:nth-child(odd) {
+  height: 40%;
+  width: 40%;
+  background: rgb(7, 187, 7);
+  margin: auto;
+}
+
+/*lygines eilutes*/
+
+tr:nth-of-type(even) td:nth-of-type(even) {
+  background: rgb(7, 187, 7);
+  border: 5px solid rgb(253, 71, 25);
+}
+tr:nth-of-type(even) td:nth-of-type(even) div:nth-child(odd) {
+  height: 40%;
+  width: 40%;
+  background: rgb(253, 71, 25);
+  margin: auto;
+}
+td:nth-of-type(odd) {
+  background: rgb(253, 71, 25);
+  border: 5px solid rgb(7, 187, 7);
+}
+tr:nth-of-type(even) td:nth-of-type(odd) div:nth-child(odd) {
+  height: 40%;
+  width: 40%;
+  background: rgb(7, 187, 7);
+  margin: auto;
+}
